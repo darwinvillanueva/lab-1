@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Cambio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <form id="cambioForm">
+    <label for="monedaOrigen">Selecciona la moneda a cambiar:</label>
+    <select id="monedaOrigen" name="monedaOrigen">
+      <option value="dolar">Dólar</option>
+      <option value="soles">Soles</option>
+      <option value="euros">Euros</option>
+    </select>
+
+    <label for="montoOrigen">Ingresa el monto a cambiar:</label>
+    <input type="number" id="montoOrigen" name="montoOrigen" placeholder="Monto">
+
+    <label for="monedaDestino">Selecciona la moneda a recibir:</label>
+    <select id="monedaDestino" name="monedaDestino">
+      <option value="dolar">Dólar</option>
+      <option value="soles">Soles</option>
+      <option value="euros">Euros</option>
+    </select>
+
+    <button type="button" onclick="calcularCambio()">Calcular Cambio</button>
+
+    <p id="resultado"></p>
+  </form>
+
+  <script src="js/acciones.js"></script>
+</body>
+</html>
+
